@@ -20,3 +20,7 @@ Focus基于qt开发的陆空两栖机器人上位机人机交互软件开发日�
 - [灯哥开源的菠萝动力开源四足控制软件（Py-Apple Dynamics ），集成了开发四足机器人所需要必须基础库，是一套完整的全开源的四足机器人控制软件程序。](https://github.com/ToanTech/py-apple-dynamics)
 - [基于Qt开发环境，开发运用于双并联机器人的人机交互软件，实现控制器参数配置，编码器数据的实时反馈，并联机器人的参数设置、基于点位运动模式进行电机位置控制，多线程控制6个电机](https://github.com/lynnllh/3PRRGUI)
 - [扫地机器人Qt上位机](https://github.com/confidentFeng/cleanRobot)
+---
+接下来是Google下来的文章
+- [Qt与机器人控制](https://modstart.com/p/v7bmw0863pdyogyp)
+- []()
