@@ -24,4 +24,4 @@ Focus基于qt开发的陆空两栖机器人上位机人机交互软件开发日�
 接下来是Google下来的文章
 - [Qt与机器人控制](https://modstart.com/p/v7bmw0863pdyogyp)
 - [想骂人了，这个🔗是qt用ros开发的全流程，可是不给看QWQ](https://blog.csdn.net/XrxVue/article/details/133618933)
-- []()
+- [感觉这个文章很重要，基础的ros和qt链接](https://my.oschina.net/emacs_8809069/blog/17313941)
