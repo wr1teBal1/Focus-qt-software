@@ -15,6 +15,7 @@ Focus基于qt开发的陆空两栖机器人上位机人机交互软件开发日�
 - 在github上遍历了中文的此类开源项目，可是大多star数极少
 - 放到下面，可能有点用处
 ---
+- [这个是开发完成度较高的一款](https://github.com/chengyangkj/Ros_Qt5_Gui_App)
 - [一个基于Qt 的机器人上位机控制系统(定位、地图标记、轨迹显示、控制、实时视频、热感视频等)](https://github.com/xpxh1724/Sony-Rescue_robot)
 - [ROS安防机器人的上位控制软件，使用QT编写](https://github.com/Nyar-D/RobotUpperControl)
 - [灯哥开源的菠萝动力开源四足控制软件（Py-Apple Dynamics ），集成了开发四足机器人所需要必须基础库，是一套完整的全开源的四足机器人控制软件程序。](https://github.com/ToanTech/py-apple-dynamics)
