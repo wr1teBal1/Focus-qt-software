@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>    <y>0</y>
+    <width>1200</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Robot Controller</string>
+  </property>
+  <property name="styleSheet">
+   <string>
+    QMainWindow { background-color: #f5f5f5; }
+    QGroupBox {
+     border: 2px solid #e0e0e0;
+     border-radius: 8px;
+     margin-top: 1ex;
+     font-size: 14px;
+     background-color: white;
+    }
+    QGroupBox::title {
+     color: #333333;
+     subcontrol-origin: margin;
+     left: 10px;
+     padding: 0 3px 0 3px;
+    }
+    QPushButton {
+     background-color: #2196F3;
+     color: white;
+     border: none;
+     border-radius: 4px;
+     padding: 8px 16px;
+     font-size: 14px;
+    }
+    QPushButton:hover { background-color: #1976D2; }
+    QPushButton:pressed { background-color: #0D47A1; }
+    #flightEmergencyButton, #walkEmergencyButton {
+     background-color: #f44336;
+     font-weight: bold;
+     font-size: 16px;
+    }
+    #flightEmergencyButton:hover, #walkEmergencyButton:hover { background-color: #d32f2f; }
+    QLabel {
+     color: #333333;
+     font-size: 14px;
+    }
+    QTabWidget::pane {
+     border: 1px solid #e0e0e0;
+     border-radius: 4px;
+    }
+    QTabBar::tab {
+     background-color: #e0e0e0;
+     padding: 8px 16px;
+     margin-right: 2px;
+     border-top-left-radius: 4px;
+     border-top-right-radius: 4px;
+    }
+    QTabBar::tab:selected {
+     background-color: #2196F3;
+     color: white;
+    }
+    #keyStatusLabel {
+     font-family: monospace;
+     font-size: 14px;
+     padding: 10px;
+     background-color: #f8f9fa;
+     border: 1px solid #e0e0e0;
+     border-radius: 4px;
+    }
+    #directionIndicator {
+     border: 2px solid #e0e0e0;
+     border-radius: 8px;
+     background-color: #f8f9fa;
+     padding: 10px;
+     min-width: 200px;
+     min-height: 200px;
+    }
+    #videoDisplay, #flightVideoDisplay, #walkVideoDisplay {
+     border: 2px solid #e0e0e0;
+     border-radius: 8px;
+     background-color: #000000;
+     color: #ffffff;
+     min-height: 300px;
+    }
+   </string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QGroupBox" name="statusGroup">
+      <property name="title">
+       <string>机器人状态</string>
+      </property>
+      <property name="minimumHeight">
+       <number>100</number>
+      </property>
+      <layout class="QHBoxLayout" name="statusLayout">
+       <item>
+        <widget class="QLabel" name="batteryLabel">
+         <property name="text">
+          <string>电池电量: --</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="connectionLabel">
+         <property name="text">
+          <string>连接状态: 未连接</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="flightModeLabel">
+         <property name="text">
+          <string>飞行模式: --</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTabWidget" name="controlTabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="flightTab">
+       <attribute name="title">
+        <string>飞行模式</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="flightLayout">
+        <item>
+         <layout class="QVBoxLayout" name="flightControlLayout">
+          <item>
+           <widget class="QPushButton" name="flightEmergencyButton">
+            <property name="text">
+             <string>紧急停止</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="flightDirectionIndicator">
+            <property name="objectName">
+             <string>directionIndicator</string>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>200</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>八向控制图案</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="flightKeyStatusLabel">
+            <property name="objectName">
+             <string>keyStatusLabel</string>
+            </property>
+            <property name="text">
+             <string>按键状态:
+W/S: 高度控制
+↑↓←→: 方向控制</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeft|Qt::AlignTop</set>
+            </property>
+            <property name="minimumHeight">
+             <number>100</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLabel" name="flightVideoDisplay">
+          <property name="objectName">
+           <string>videoDisplay</string>
+          </property>
+          <property name="text">
+           <string>视频显示区域</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="walkTab">
+       <attribute name="title">
+        <string>行走模式</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="walkLayout">
+        <item>
+         <layout class="QVBoxLayout" name="walkControlLayout">
+          <item>
+           <widget class="QPushButton" name="walkEmergencyButton">
+            <property name="text">
+             <string>紧急停止</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="walkDirectionIndicator">
+            <property name="objectName">
+             <string>directionIndicator</string>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>200</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>八向控制图案</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="walkKeyStatusLabel">
+            <property name="objectName">
+             <string>keyStatusLabel</string>
+            </property>
+            <property name="text">
+             <string>按键状态:
+↑↓←→: 移动方向控制</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeft|Qt::AlignTop</set>
+            </property>
+            <property name="minimumHeight">
+             <number>100</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLabel" name="walkVideoDisplay">
+          <property name="objectName">
+           <string>videoDisplay</string>
+          </property>
+          <property name="text">
+           <string>视频显示区域</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+</ui>

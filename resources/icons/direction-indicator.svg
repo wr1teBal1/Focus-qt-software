@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- 中心圆 -->
+  <circle cx="100" cy="100" r="10" fill="#2196F3"/>
+  <!-- 八个方向箭头 -->
+  <g id="arrows" fill="#e0e0e0" filter="url(#glow)">
+    <!-- 上 -->
+    <path id="up" d="M100 40l-15 25h30z"/>
+    <!-- 右上 -->
+    <path id="up-right" d="M140 60l-27 10l10 27z"/>
+    <!-- 右 -->
+    <path id="right" d="M160 100l-25 -15v30z"/>
+    <!-- 右下 -->
+    <path id="down-right" d="M140 140l-10 -27l-27 10z"/>
+    <!-- 下 -->
+    <path id="down" d="M100 160l15 -25h-30z"/>
+    <!-- 左下 -->
+    <path id="down-left" d="M60 140l27 -10l-10 -27z"/>
+    <!-- 左 -->
+    <path id="left" d="M40 100l25 15v-30z"/>
+    <!-- 左上 -->
+    <path id="up-left" d="M60 60l10 27l27 -10z"/>
+  </g>
+</svg>

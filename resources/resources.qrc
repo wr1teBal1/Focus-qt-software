@@ -1,0 +1,9 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/">
+        <file>icons/battery.svg</file>
+        <file>icons/connection.svg</file>
+        <file>icons/flight-mode.svg</file>
+        <file>icons/direction-indicator.svg</file>
+    </qresource>
+</RCC>
