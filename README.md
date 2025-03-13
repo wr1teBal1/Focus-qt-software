@@ -44,7 +44,7 @@ Focus基于qt开发的陆空两栖机器人上位机人机交互软件开发日�
 ## 设计(week 0)
 
 写了一个简易的qt窗口，还没加上信号和槽，实现了点按高亮显示，急停按钮，模式切换
+<img width="1189" alt="截屏2025-03-13 12 33 08" src="https://github.com/user-attachments/assets/705fa228-0e20-4a12-8175-694847b9f1a6" />
+<img width="1227" alt="截屏2025-03-13 12 34 03" src="https://github.com/user-attachments/assets/1d29a6a3-101d-45c1-be0e-bb800205735c" />
 
-![截屏2025-03-13 12.33.08_副本](/Users/xuhengrui/Desktop/截屏2025-03-13 12.33.08_副本.png)
 
-![截屏2025-03-13 12.34.03](/Users/xuhengrui/Desktop/截屏2025-03-13 12.34.03.png)
