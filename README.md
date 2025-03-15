@@ -50,3 +50,5 @@ Focus基于qt开发的陆空两栖机器人上位机人机交互软件开发日�
 <img width="1227" alt="截屏2025-03-13 12 34 03" src="https://github.com/user-attachments/assets/1d29a6a3-101d-45c1-be0e-bb800205735c" />
 ---
 学长让我去学习QGC地面站的二次开发，这就开学，先学会了简单的app名字和图标修改
+
+![1742046785594](https://github.com/user-attachments/assets/821908c5-b537-433b-86c4-7bbeec6794f4)
