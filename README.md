@@ -111,9 +111,10 @@ QGC本身支持跨平台开发：
 
 ## 开发开始（week 3）
 
-### MAVlink信息发送 
+### 自定义MAVlink （成功）
 
-1. 定义 XML 文件： 添加一个名为 hello world 的消息。
+1. 定义 XML 文件： 添加一个 text 的消息。
 2. 生成代码： 使用 MAVLink 代码生成工具生成对应的 C 头文件。
 3. 成 QGC： 将生成的头文件放入 QGC 的 MAVLink 目录，并在 QGC 的发送函数中调用打包函数构造消息。
-4. 触发发送： 在 QML 中添加按钮，通过调用新接口来发送控制小车前进的命令。
+4. 触发发送： 在 QML 中添加按钮，通过调用新接口来发送 text 的命令。
+<img width="452" alt="07FBD11A-424D-4B8B-8BFE-5111CBD8BD7B" src="https://github.com/user-attachments/assets/2898e9a8-8d9b-4526-a294-5421053cdde6" />
