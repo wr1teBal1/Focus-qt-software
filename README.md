@@ -118,3 +118,5 @@ QGC本身支持跨平台开发：
 3. 成 QGC： 将生成的头文件放入 QGC 的 MAVLink 目录，并在 QGC 的发送函数中调用打包函数构造消息。
 4. 触发发送： 在 QML 中添加按钮，通过调用新接口来发送 text 的命令。
 <img width="452" alt="07FBD11A-424D-4B8B-8BFE-5111CBD8BD7B" src="https://github.com/user-attachments/assets/2898e9a8-8d9b-4526-a294-5421053cdde6" />
+
+停更至4.12日。准备微积分考试，下周研读普罗米修斯仿真代码
